@@ -11,14 +11,14 @@ def quiz():
   score=0
 
   for i in range(len(questions)):
-      user_answer=input(question[i]).strip().lower()
-      if user_answer==answer[i];
+      user_answer=input(questions[i]).strip().lower()
+      if user_answer==answers[i];
           print("Correct!")
           score+=1
       else:
           print("Incorrect!")
 
   print("\nQuiz completed!")
-  print(f"You got {sore}/{len(questions)} question correct.")
+  print(f"You got {score}/{len(questions)} question correct.")
 
 quiz()
