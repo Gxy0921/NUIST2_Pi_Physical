@@ -12,7 +12,7 @@ def quiz():
 
   for i in range(len(questions)):
       user_answer=input(questions[i]).strip().lower()
-      if user_answer==answers[i];
+      if user_answer==answers[i]:
           print("Correct!")
           score+=1
       else:
